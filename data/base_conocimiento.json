@@ -1,0 +1,305 @@
+{
+  "sintomas_secundarios": [
+    {
+      "id": "SINT-01",
+      "nombre": "Dolor al tragar / Garganta",
+      "peso_base": 3,
+      "tipo_preguntas": "normales",
+      "keywords": ["tragar", "garganta", "odinofagia", "arder", "ardor", "pasar saliva"]
+    },
+    {
+      "id": "SINT-02",
+      "nombre": "Fiebre / Febrícula",
+      "peso_base": 3,
+      "tipo_preguntas": "normales",
+      "keywords": ["fiebre", "calentura", "febrícula", "temperatura", "cuerpo cortado", "escalofrios"]
+    },
+    {
+      "id": "SINT-03",
+      "nombre": "Tos seca o irritativa",
+      "peso_base": 2,
+      "tipo_preguntas": "normales",
+      "keywords": ["tos", "toser", "carraspera", "irritacion"]
+    },
+    {
+      "id": "SINT-04",
+      "nombre": "Falta de aire / Dificultad respiratoria",
+      "peso_base": 5,
+      "tipo_preguntas": "solo_duracion",
+      "keywords": ["respirar", "aire", "falta de aire", "asfixia", "disnea", "ahogo"]
+    },
+    {
+      "id": "SINT-05",
+      "nombre": "Expectoración o flema",
+      "peso_base": 3,
+      "tipo_preguntas": "solo_duracion",
+      "keywords": ["flema", "flemas", "moco", "expectoracion", "esputo"]
+    },
+    {
+      "id": "SINT-06",
+      "nombre": "Dolor de oído / Otalgia",
+      "peso_base": 4,
+      "tipo_preguntas": "normales",
+      "keywords": ["oido", "oído", "punzadas", "punzada", "oreja", "otalgia"]
+    },
+    {
+      "id": "SINT-07",
+      "nombre": "Disminución de audición / Zumbido",
+      "peso_base": 2,
+      "tipo_preguntas": "solo_duracion",
+      "keywords": ["zumbido", "sordo", "escucho mal", "oido tapado", "audicion", "retumbo"]
+    },
+    {
+      "id": "SINT-08",
+      "nombre": "Dolor de cabeza (Cefalea)",
+      "peso_base": 3,
+      "tipo_preguntas": "normales",
+      "keywords": ["cabeza", "cefalea", "jaqueca", "migraña", "sienes"]
+    },
+    {
+      "id": "SINT-09",
+      "nombre": "Dolor de muela / Odontalgia",
+      "peso_base": 3,
+      "tipo_preguntas": "normales",
+      "keywords": ["muela", "diente", "odontalgia", "encía", "encias", "dolor de muela"]
+    },
+    {
+      "id": "SINT-10",
+      "nombre": "Dolor de ojos",
+      "peso_base": 3,
+      "tipo_preguntas": "normales",
+      "keywords": ["dolor de ojos", "dolor en los ojos", "ojo duele", "orbita"]
+    },
+    {
+      "id": "SINT-11",
+      "nombre": "Enrojecimiento de ojos / Ojo rojo",
+      "peso_base": 2,
+      "tipo_preguntas": "solo_duracion",
+      "keywords": ["ojo rojo", "ojos rojos", "enrojecimiento", "ojo irritado", "venitas en el ojo"]
+    },
+    {
+      "id": "SINT-12",
+      "nombre": "Dolor de huesos",
+      "peso_base": 3,
+      "tipo_preguntas": "normales",
+      "keywords": ["dolor de huesos", "huesos", "articulaciones", "esqueleto"]
+    },
+    {
+      "id": "SINT-13",
+      "nombre": "Dolor de pie / Tobillo",
+      "peso_base": 2,
+      "tipo_preguntas": "normales",
+      "keywords": ["pie", "pies", "tobillo", "empeine", "talon", "talón", "dolor de pie"]
+    },
+    {
+      "id": "SINT-14",
+      "nombre": "Dolor en el brazo",
+      "peso_base": 3,
+      "tipo_preguntas": "normales",
+      "keywords": ["brazo", "brazos", "hombro", "antebrazo", "dolor de brazo"]
+    },
+    {
+      "id": "SINT-15",
+      "nombre": "Presión o dolor opresivo en el pecho",
+      "peso_base": 5,
+      "tipo_preguntas": "normales",
+      "keywords": ["pecho opresivo", "presión en el pecho", "presion en el pecho", "dolor en el pecho", "opresion pecho"]
+    },
+    {
+      "id": "SINT-16",
+      "nombre": "Picadura de insecto / animal ponzoñoso (Araña, Alacrán, Abeja, Avispa)",
+      "peso_base": 5,
+      "tipo_preguntas": "directo",
+      "keywords": ["picadura", "pico", "picó", "araña", "arana", "alacran", "alacrán", "abeja", "avispa", "piquete"]
+    },
+    {
+      "id": "SINT-17",
+      "nombre": "Visión borrosa",
+      "peso_base": 3,
+      "tipo_preguntas": "solo_duracion",
+      "keywords": ["vision borrosa", "visión borrosa", "veo borroso", "desenfocado"]
+    },
+    {
+      "id": "SINT-18",
+      "nombre": "Mancha en el ojo",
+      "peso_base": 2,
+      "tipo_preguntas": "solo_duracion",
+      "keywords": ["mancha en el ojo", "mancha ojo", "moscas volantes", "sombra en el ojo"]
+    },
+    {
+      "id": "SINT-19",
+      "nombre": "Ronchas / Sarpullido",
+      "peso_base": 2,
+      "tipo_preguntas": "normales",
+      "keywords": ["ronchas", "sarpullido", "alergia en la piel", "granos piel", "urticaria"]
+    },
+    {
+      "id": "SINT-20",
+      "nombre": "Dolor de rodilla",
+      "peso_base": 2,
+      "tipo_preguntas": "normales",
+      "keywords": ["rodilla", "rodillas", "dolor de rodilla", "patela"]
+    },
+    {
+      "id": "SINT-21",
+      "nombre": "Ojo amarillo (Ictericia ocular)",
+      "peso_base": 4,
+      "tipo_preguntas": "solo_duracion",
+      "keywords": ["ojo amarillo", "ojos amarillos", "ictericia", "parte blanca amarilla"]
+    },
+    {
+      "id": "SINT-22",
+      "nombre": "Incontinencia urinaria",
+      "peso_base": 2,
+      "tipo_preguntas": "solo_duracion",
+      "keywords": ["incontinencia", "goteo orina", "se me sale la orina", "no aguanto orinar"]
+    },
+    {
+      "id": "SINT-23",
+      "nombre": "Pérdida de cabello (Alopecia)",
+      "peso_base": 1,
+      "tipo_preguntas": "solo_duracion",
+      "keywords": ["caida de cabello", "caída de cabello", "se me cae el pelo", "alopecia", "calvicie"]
+    },
+    {
+      "id": "SINT-24",
+      "nombre": "Disfunción eréctil",
+      "peso_base": 2,
+      "tipo_preguntas": "solo_duracion",
+      "keywords": ["disfuncion erectil", "disfunción eréctil", "ereccion", "impotencia"]
+    },
+    {
+      "id": "SINT-25",
+      "nombre": "Dientes amarillos / Manchas dentales",
+      "peso_base": 1,
+      "tipo_preguntas": "solo_duracion",
+      "keywords": ["dientes amarillos", "diente amarillo", "manchas en los dientes", "sarro"]
+    },
+    {
+      "id": "SINT-26",
+      "nombre": "Palidez cutánea",
+      "peso_base": 2,
+      "tipo_preguntas": "solo_duracion",
+      "keywords": ["palidez", "pálido", "palido", "cara pálida", "descolorido"]
+    },
+    {
+      "id": "SINT-27",
+      "nombre": "Diarrea / Evacuaciones líquidas",
+      "peso_base": 3,
+      "tipo_preguntas": "solo_duracion",
+      "keywords": ["diarrea", "estomago suelto", "evacuaciones liquidas", "soltura"]
+    },
+    {
+      "id": "SINT-28",
+      "nombre": "Quemadura cutánea",
+      "peso_base": 5,
+      "tipo_preguntas": "directo",
+      "keywords": ["quemadura", "me queme", "me quemé", "ampolla quemadura", "piel quemada", "agua caliente"]
+    },
+    {
+      "id": "SINT-29",
+      "nombre": "Ansiedad / Estrés elevado",
+      "peso_base": 3,
+      "tipo_preguntas": "solo_intensidad",
+      "keywords": ["ansiedad", "ataque de panico", "estres", "estrés", "angustia", "desesperacion", "nervios"]
+    }
+  ],
+  "enfermedades": [
+    {
+      "id": "ENF-01",
+      "nombre": "Faringitis Aguda / Amigdalitis",
+      "sintomas_clave": ["SINT-01", "SINT-02", "SINT-03"],
+      "nivel_riesgo": "Bajo",
+      "recomendaciones": "Guardar reposo vocal, mantener abundante hidratación con líquidos tibios y utilizar analgésicos de libre venta.",
+      "canalizacion": "Médico General"
+    },
+    {
+      "id": "ENF-02",
+      "nombre": "Caries Avanzada / Infección Odontológica",
+      "sintomas_clave": ["SINT-09", "SINT-25"],
+      "nivel_riesgo": "Medio",
+      "recomendaciones": "Evitar alimentos extremadamente fríos, calientes o azucarados. Realizar enjuagues con agua tibia salada. No automedicarse antibióticos.",
+      "canalizacion": "Odontología / Cirujano Dentista"
+    },
+    {
+      "id": "ENF-03",
+      "nombre": "Conjuntivitis / Irritación Ocular",
+      "sintomas_clave": ["SINT-10", "SINT-11"],
+      "nivel_riesgo": "Bajo",
+      "recomendaciones": "Lavar los ojos con solución fisiológica estéril, evitar frotarse los ojos y desinfectar manos antes de tocar la cara.",
+      "canalizacion": "Oftalmología / Médico General"
+    },
+    {
+      "id": "ENF-04",
+      "nombre": "Patología Ocular Compleja (Glaucoma / Catarata / Desprendimiento)",
+      "sintomas_clave": ["SINT-17", "SINT-18", "SINT-10"],
+      "nivel_riesgo": "Medio / Alto",
+      "recomendaciones": "Evitar esfuerzos visuales o físicos bruscos. No aplicar gotas médicas no recetadas.",
+      "canalizacion": "Oftalmología Prioritaria"
+    },
+    {
+      "id": "ENF-05",
+      "nombre": "Traumatismo Articular o Osteomuscular (Esguince / Lesión)",
+      "sintomas_clave": ["SINT-12", "SINT-13", "SINT-14", "SINT-20"],
+      "nivel_riesgo": "Medio",
+      "recomendaciones": "Aplicar hielo local envuelto en un paño durante 15 minutos, guardar reposo de la extremidad y evitar apoyar el peso corporal.",
+      "canalizacion": "Traumatología y Ortopedia"
+    },
+    {
+      "id": "ENF-06",
+      "nombre": "Afección Hepática o Biliar (Ictericia / Anemia)",
+      "sintomas_clave": ["SINT-21", "SINT-26"],
+      "nivel_riesgo": "Alto",
+      "recomendaciones": "Evitar el consumo de alcohol, alimentos grasos y medicamentos hepatotóxicos como paracetamol en dosis altas.",
+      "canalizacion": "Gastroenterología / Medicina Interna"
+    },
+    {
+      "id": "ENF-07",
+      "nombre": "Dermatitis / Urticaria Cutánea",
+      "sintomas_clave": ["SINT-19", "SINT-23"],
+      "nivel_riesgo": "Bajo",
+      "recomendaciones": "Evitar rascar la zona. Aplicar compresas frías y evitar jabones agresivos o perfumes.",
+      "canalizacion": "Dermatología"
+    },
+    {
+      "id": "ENF-08",
+      "nombre": "Gastroenteritis / Síndrome Diarreico",
+      "sintomas_clave": ["SINT-27", "SINT-02"],
+      "nivel_riesgo": "Medio",
+      "recomendaciones": "Iniciar hidratación oral con vida suero oral. Llevar dieta blanda (arroz, manzana, tostadas) y evitar lácteos o irritantes.",
+      "canalizacion": "Gastroenterología / Médico General"
+    },
+    {
+      "id": "ENF-09",
+      "nombre": "Picadura / Picadura de Animal Ponzoñoso",
+      "sintomas_clave": ["SINT-16"],
+      "nivel_riesgo": "Urgente / Variable según especie",
+      "recomendaciones": "Lave la zona con agua y jabón. No aplique torniquetes, hielo directo ni succione el veneno. Si presenta mareo, dificultad respiratoria o la especie es de alta peligrosidad (araña violín/viuda negra o alacrán), acuda de inmediato a urgencias.",
+      "canalizacion": "Urgencias Médicas / Toxicología"
+    },
+    {
+      "id": "ENF-10",
+      "nombre": "Lesión Térmica / Quemadura",
+      "sintomas_clave": ["SINT-28"],
+      "nivel_riesgo": "Variable según profundidad y extensión",
+      "recomendaciones": "Enfríe la zona con agua al tiempo (NO helada) por 10 a 15 minutos. No aplique remedios caseros (pasta de dientes, aceite, crema). No reviente ampollas. Si afecta cara, manos o articulaciones, busque valoración médica.",
+      "canalizacion": "Urgencias / Cirugía Plástica y Quemados"
+    },
+    {
+      "id": "ENF-11",
+      "nombre": "Cuadro de Ansiedad / Crisis de Estrés",
+      "sintomas_clave": ["SINT-29"],
+      "nivel_riesgo": "Moderado / Emocional",
+      "recomendaciones": "Realice la técnica de respiración diafragmática (Inhale en 4 seg, sostenga 4 seg, exhale en 6 seg). Busque un lugar tranquilo y recuerde que la crisis es temporal. Si la intensidad es alta o recurrente, solicite acompañamiento profesional.",
+      "canalizacion": "Psicología / Psiquiatría / Psicoterapia"
+    },
+    {
+      "id": "ENF-12",
+      "nombre": "Disfunción Sexual / Incontinencia Urinaria",
+      "sintomas_clave": ["SINT-22", "SINT-24"],
+      "nivel_riesgo": "Bajo / Controlable",
+      "recomendaciones": "Mantener hábitos de vida saludables, evitar el tabaco, reducir el estrés y realizar ejercicios de suelo pélvico (Kegel). Consulte a un especialista para una evaluación hormonal y funcional.",
+      "canalizacion": "Urología / Sexología"
+    }
+  ]
+}
