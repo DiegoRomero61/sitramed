@@ -203,103 +203,401 @@
       "tipo_preguntas": "solo_intensidad",
       "keywords": ["ansiedad", "ataque de panico", "estres", "estrés", "angustia", "desesperacion", "nervios"]
     }
+    {
+      "id": "SINT-30",
+      "nombre": "Dolor de espalda (Lumbalgia / Dorsalgia)",
+      "peso_base": 3,
+      "tipo_preguntas": "normales",
+      "keywords": ["espalda", "dolor de espalda", "lumbalgia"]
+    },
   ],
   "enfermedades": [
     {
       "id": "ENF-01",
-      "nombre": "Faringitis Aguda / Amigdalitis",
-      "sintomas_clave": ["SINT-01", "SINT-02", "SINT-03"],
+      "nombre": "Dolor de garganta",
+      "sintomas_clave": ["SINT-01"],
       "nivel_riesgo": "Bajo",
-      "recomendaciones": "Guardar reposo vocal, mantener abundante hidratación con líquidos tibios y utilizar analgésicos de libre venta.",
-      "canalizacion": "Médico General"
+      "recomendaciones": "Mantenimiento de abundante hidratación con líquidos a temperatura ambiente o tibia, reposo vocal relativo, enjuagues o gargarismos con agua tibia salada y consumo de alimentos blandos o no irritantes.",
+      "banderas_rojas":"Síntomas/Red Flags: Dificultad para respirar (disnea), imposibilidad total para deglutir o manejar saliva (sialorrea), incapacidad para abrir la boca (trismus), abultamiento o asimetría visible en el cuello o amígdalas, o fiebre persistente mayor a 38.5 °C por más de 3 días.
+Factores por Edad: En niños menores de 3 años o adultos mayores de 65 años, la disfagia u odinofagia aguda requiere valoración prioritaria para descartar colecciones supurativas (absceso periamigdalino) o cuerpo extraño.",
+      "canalizacion": "Médico General / Otorrinolaringología"
     },
     {
       "id": "ENF-02",
-      "nombre": "Caries Avanzada / Infección Odontológica",
-      "sintomas_clave": ["SINT-09", "SINT-25"],
-      "nivel_riesgo": "Medio",
-      "recomendaciones": "Evitar alimentos extremadamente fríos, calientes o azucarados. Realizar enjuagues con agua tibia salada. No automedicarse antibióticos.",
-      "canalizacion": "Odontología / Cirujano Dentista"
+      "nombre": "Fiebre",
+      "sintomas_clave": ["SINT-02"],
+      "nivel_riesgo": "Bajo",
+      "recomendaciones": "Uso de medios físicos (baños o compresas con agua templada/tibia, no fría), reposo en cama, vestimenta ligera, ambiente fresco e ingesta continua de líquidos (agua o suero oral) para prevenir deshidratación.",
+      "banderas_rojas":"Lactantes menores de 3 meses con temperatura 38.0 C constituyen una urgencia médica inmediata. En adultos mayores de 65 años, la fiebre puede estar ausente o manifestarse como deterioro cognitivo agudo (delirium) e hipotermia.",
+      "canalizacion": "Médico General / Urgencias (Si hay banderas rojas)"
     },
     {
       "id": "ENF-03",
-      "nombre": "Conjuntivitis / Irritación Ocular",
-      "sintomas_clave": ["SINT-10", "SINT-11"],
+      "nombre": "Tos seca",
+      "sintomas_clave": ["SINT-03"],
       "nivel_riesgo": "Bajo",
-      "recomendaciones": "Lavar los ojos con solución fisiológica estéril, evitar frotarse los ojos y desinfectar manos antes de tocar la cara.",
-      "canalizacion": "Oftalmología / Médico General"
+      "recomendaciones": "Ingesta frecuente de agua para mantener la mucosa orofaríngea hidratada, humidificación del ambiente, evitar la exposición al humo de tabaco, polvo, contaminación y cambios bruscos de temperatura.",
+      "banderas_rojas":"Síntomas/Red Flags: Tos acompañada de expectoración con sangre (hemoptisis), silbidos en el pecho (sibilancias), dolor torácico opresivo, sudoración nocturna profusa, pérdida de peso no explicada o evolución superior a 3 semanas.
+Factores por Edad: En adultos mayores y pacientes con comorbilidades (diabetes, hipertensión, EPOC), la tos irritativa persistente requiere descarte de aspiración o falla cardiaca. En lactantes, sospecha de tos ferina o bronquiolitis.",
+      "canalizacion": "Médico General / Neumología"
     },
     {
       "id": "ENF-04",
-      "nombre": "Patología Ocular Compleja (Glaucoma / Catarata / Desprendimiento)",
-      "sintomas_clave": ["SINT-17", "SINT-18", "SINT-10"],
-      "nivel_riesgo": "Medio / Alto",
-      "recomendaciones": "Evitar esfuerzos visuales o físicos bruscos. No aplicar gotas médicas no recetadas.",
-      "canalizacion": "Oftalmología Prioritaria"
+      "nombre": "Falta de aire",
+      "sintomas_clave": ["SINT-04"],
+      "nivel_riesgo": "Bajo",
+      "recomendaciones": "Mantenerse en posición semi-sentada (fowler a 45 grados), aflojar ropa ajustada alrededor del cuello y tórax, mantener ventilación ambiental y guardar reposo físico absoluto.",
+      "banderas_rojas":"Síntomas/Red Flags: Coloración azulada en labios o uñas (cianosis), incapacidad para pronunciar frases completas, dolor u opresión en el pecho, estridor laríngeo, confusión, mareo o alteración del estado de alerta.
+Factores por Edad: Cualquier episodio de disnea de inicio súbito en adultos mayores o recién nacidos es una bandera roja crítica.",
+      "canalizacion": "Neumología / Urgencias (Si hay banderas rojas)"
     },
     {
       "id": "ENF-05",
-      "nombre": "Traumatismo Articular o Osteomuscular (Esguince / Lesión)",
-      "sintomas_clave": ["SINT-12", "SINT-13", "SINT-14", "SINT-20"],
-      "nivel_riesgo": "Medio",
-      "recomendaciones": "Aplicar hielo local envuelto en un paño durante 15 minutos, guardar reposo de la extremidad y evitar apoyar el peso corporal.",
-      "canalizacion": "Traumatología y Ortopedia"
+      "nombre": "Flemas",
+      "sintomas_clave": ["SINT-05"],
+      "nivel_riesgo": "Bajo",
+      "recomendaciones": "Mantener alta ingesta de líquidos para fluidificar las secreciones bronquiales, uso de vaporizaciones o solución salina, evitar la supresión farmacológica de la tos cuando existe flema productiva.",
+      "banderas_rojas":"Síntomas/Red Flags: Esputo teñido de sangre (hemoptoico), secreción purulenta con mal olor, fiebre alta asociada, escalofríos intensos o dificultad para respirar progresiva.
+Factores por Edad: En adultos mayores de 60 años, el cambio de coloración de la flema de transparente a verdosa/amarillenta acompañada de fatiga es un indicador primario de neumonía bacteriana.",
+      "canalizacion": "Médico General / Neumología"
     },
     {
       "id": "ENF-06",
-      "nombre": "Afección Hepática o Biliar (Ictericia / Anemia)",
-      "sintomas_clave": ["SINT-21", "SINT-26"],
-      "nivel_riesgo": "Alto",
-      "recomendaciones": "Evitar el consumo de alcohol, alimentos grasos y medicamentos hepatotóxicos como paracetamol en dosis altas.",
-      "canalizacion": "Gastroenterología / Medicina Interna"
+      "nombre": "Dolor de oído",
+      "sintomas_clave": ["SINT-06"],
+      "nivel_riesgo": "Bajo",
+      "recomendaciones": "Colocar compresas tibias (no calientes) sobre la zona externa del oído. Mantener el oído completamente seco (evitar la entrada de agua al bañarse) y no introducir objetos, cotonetes o gotas otológicas sin prescripción.",
+      "banderas_rojas":"Síntomas/Red Flags: Salida de fluido, pus o sangre por el conducto auditivo (otorrea/otorragia), inflamación o enrojecimiento detrás de la oreja (apófisis mastoides), parálisis facial del mismo lado o mareo/vértigo severo.
+Factores por Edad: En lactantes y niños pequeños, la otalgia suele manifestarse como llanto inconsolable y frotamiento de la oreja; requiere revisión para descartar otitis media supurada.",
+      "canalizacion": "Médico General / Otorrinolaringología"
     },
     {
       "id": "ENF-07",
-      "nombre": "Dermatitis / Urticaria Cutánea",
-      "sintomas_clave": ["SINT-19", "SINT-23"],
+      "nombre": "Disminución o zumbido en el oído",
+      "sintomas_clave": ["SINT-07"],
       "nivel_riesgo": "Bajo",
-      "recomendaciones": "Evitar rascar la zona. Aplicar compresas frías y evitar jabones agresivos o perfumes.",
-      "canalizacion": "Dermatología"
-    },
-    {
+      "recomendaciones": "Evitar la exposición a ruidos fuertes o el uso de auriculares a volumen elevado. Evitar el uso de hisopos de algodón que puedan impactar tapones de cerumen.",
+      "banderas_rojas":"Síntomas/Red Flags: Pérdida repentina o súbita de la audición en uno o ambos oídos en cuestión de horas (hipoacusia súbita), tinnitus pulsátil (que bate al ritmo del corazón), mareo incapacitante, vómito o pérdida del equilibrio.
+Factores por Edad: En adultos mayores, la presbiacusia es gradual; sin embargo, una baja repentina requiere descarto de evento vascular o neuropatía del VIII par craneal.",
+      "canalizacion": "Otorrinolaringología / Audiología"
+    },{
       "id": "ENF-08",
-      "nombre": "Gastroenteritis / Síndrome Diarreico",
-      "sintomas_clave": ["SINT-27", "SINT-02"],
-      "nivel_riesgo": "Medio",
-      "recomendaciones": "Iniciar hidratación oral con vida suero oral. Llevar dieta blanda (arroz, manzana, tostadas) y evitar lácteos o irritantes.",
-      "canalizacion": "Gastroenterología / Médico General"
+      "nombre": "Dolor de cabeza",
+      "sintomas_clave": ["SINT-08"],
+      "nivel_riesgo": "Bajo",
+      "recomendaciones": "Reposo en una habitación oscura y silenciosa, aplicación de compresas frías en la frente o sienes, hidratación adecuada, técnicas de relajación y mantener horarios de sueño regulares.",
+      "banderas_rojas":"Síntomas/Red Flags: Cefalea de inicio súbito, dolor acompañado de rigidez de nuca, fiebre alta, confusión, alteración de la visión, debilidad o adormecimiento en un lado del cuerpo o convulsiones.
+Factores por Edad: Cefaleas de nuevo inicio en personas mayores de 50 años o en pacientes con antecedente de cáncer o inmunosupresión exigen neuroimagen inmediata para descartar arteritis temporal o procesos ocupativos.",
+      "canalizacion": "Médico General / Neurología"
     },
     {
       "id": "ENF-09",
-      "nombre": "Picadura / Picadura de Animal Ponzoñoso",
-      "sintomas_clave": ["SINT-16"],
-      "nivel_riesgo": "Urgente / Variable según especie",
-      "recomendaciones": "Lave la zona con agua y jabón. No aplique torniquetes, hielo directo ni succione el veneno. Si presenta mareo, dificultad respiratoria o la especie es de alta peligrosidad (araña violín/viuda negra o alacrán), acuda de inmediato a urgencias.",
-      "canalizacion": "Urgencias Médicas / Toxicología"
+      "nombre": "Dolor de muela",
+      "sintomas_clave": ["SINT-09"],
+      "nivel_riesgo": "Bajo",
+      "recomendaciones": "Enjuagues suaves con agua tibia y sal para limpiar residuos de alimentos. Utilizar hilo dental con precaución. Evitar masticar sobre la pieza afectada y no aplicar aspirina ni remedios caseros directamente sobre la encía.",
+      "banderas_rojas":"Síntomas/Red Flags: Inflamación o hinchazón visible de la mejilla, cara o cuello, imposibilidad para deglutir o abrir la boca, fiebre persistente o drenaje purulento con mal sabor u olor.
+Factores por Edad: En pacientes diabéticos o adultos mayores, las infecciones odontogénicas pueden diseminarse rápidamente hacia los espacios del cuello (angina de Ludwig), constituyendo una emergencia vital.",
+      "canalizacion": "Odontología"
     },
     {
       "id": "ENF-10",
-      "nombre": "Lesión Térmica / Quemadura",
-      "sintomas_clave": ["SINT-28"],
-      "nivel_riesgo": "Variable según profundidad y extensión",
-      "recomendaciones": "Enfríe la zona con agua al tiempo (NO helada) por 10 a 15 minutos. No aplique remedios caseros (pasta de dientes, aceite, crema). No reviente ampollas. Si afecta cara, manos o articulaciones, busque valoración médica.",
-      "canalizacion": "Urgencias / Cirugía Plástica y Quemados"
+      "nombre": "Dolor de ojos",
+      "sintomas_clave": ["SINT-10"],
+      "nivel_riesgo": "Bajo",
+      "recomendaciones": "Guardar reposo visual (evitar pantallas de celular, computadora o televisión), no frotarse los ojos, suspender el uso de lentes de contacto y usar gafas de sol si existe fotofobia.",
+      "banderas_rojas":"Síntomas/Red Flags: Dolor ocular intenso y punzante acompañado de ojo rojo, visión borrosa súbita, halos de colores alrededor de las luces, náuseas/vómito (sospecha de glaucoma agudo), o dolor al mover el ojo asociado a pérdida de visión.
+Factores por Edad: En pacientes adultos mayores o con miopía magna, el dolor con alteraciones visuales requiere descartar patología vitreorretiniana de forma prioritaria.",
+      "canalizacion": "Oftalmología"
     },
     {
       "id": "ENF-11",
-      "nombre": "Cuadro de Ansiedad / Crisis de Estrés",
-      "sintomas_clave": ["SINT-29"],
-      "nivel_riesgo": "Moderado / Emocional",
-      "recomendaciones": "Realice la técnica de respiración diafragmática (Inhale en 4 seg, sostenga 4 seg, exhale en 6 seg). Busque un lugar tranquilo y recuerde que la crisis es temporal. Si la intensidad es alta o recurrente, solicite acompañamiento profesional.",
-      "canalizacion": "Psicología / Psiquiatría / Psicoterapia"
+      "nombre": "Ojo rojo",
+      "sintomas_clave": ["SINT-11"],
+      "nivel_riesgo": "Bajo",
+      "recomendaciones": "Lavar los ojos con solución fisiológica estéril o lágrimas artificiales de libre venta, suspender el uso de lentes de contacto, evitar frotarse los ojos y mantener una estricta higiene de manos antes de tocar la cara.",
+      "banderas_rojas":"Síntomas/Red Flags: Dolor ocular moderado a severo, disminución o pérdida de la agudeza visual, fotofobia intensa (intolerancia a la luz), pupila asimétrica o fija, secreción purulenta abundante o antecedente de trauma/cuerpo extraño.
+Factores por Edad: En recién nacidos, el ojo rojo con secreción requiere descarte de conjuntivitis neonatal por transmisión vertical (urgencia). En adultos mayores, descartar glaucoma de ángulo cerrado o queratitis.",
+      "canalizacion": "Médico General / Oftalmología"
     },
     {
       "id": "ENF-12",
-      "nombre": "Disfunción Sexual / Incontinencia Urinaria",
-      "sintomas_clave": ["SINT-22", "SINT-24"],
-      "nivel_riesgo": "Bajo / Controlable",
-      "recomendaciones": "Mantener hábitos de vida saludables, evitar el tabaco, reducir el estrés y realizar ejercicios de suelo pélvico (Kegel). Consulte a un especialista para una evaluación hormonal y funcional.",
+      "nombre": "Dolor de huesos",
+      "sintomas_clave": ["SINT-12"],
+      "nivel_riesgo": "Bajo",
+      "recomendaciones": "Reposo relativo evitando actividades de alto impacto, mantener una adecuada postura y evitar esfuerzos físicos bruscos o carga de peso excesivo mientras se evalúa el origen.",
+      "banderas_rojas":"Síntomas/Red Flags: Dolor profundo y persistente que empeora durante la noche o despierta al paciente, acompañado de fiebre no explicada, pérdida de peso, sudoración nocturna, deformidad ósea visible o antecedente de traumatismo de alto impacto.
+Factores por Edad: En niños y adolescentes, el dolor óseo localizado persistente exige descarto de osteomielitis o procesos neoplásicos (osteosarcoma). En adultos mayores de 50 años, descarto de fractura por fragilidad (osteoporosis) o metástasis.",
+      "canalizacion": "Médico General / Traumatología / Reumatología"
+    },
+    {
+      "id": "ENF-13",
+      "nombre": "Dolor de pie / emepeine / talón",
+      "sintomas_clave": ["SINT-13"],
+      "nivel_riesgo": "Bajo",
+      "recomendaciones": "Aplicar el protocolo RICE (Reposo, Hielo envuelto en tela por 15 minutos, Compresión suave con vendaje elástico y Elevación de la extremidad). Usar calzado cómodo con buen soporte plantar.",
+      "banderas_rojas":"Síntomas/Red Flags: Incapacidad total para apoyar el pie o dar cuatro pasos seguidos, deformidad articular evidente, enrojecimiento con calor local extenso, pérdida de sensibilidad (parestesia) o cambio de coloración (palidez o cianosis en los dedos).
+Factores por Edad: En pacientes con diabetes (cualquier edad), cualquier lesión, dolor o cambio de coloración en el pie constituye una bandera roja crítica (pie diabético). En adultos mayores, descartar enfermedad arterial periférica.",
+      "canalizacion": "Traumatología / Ortopedia / Reumatología"
+    },
+    {
+      "id": "ENF-14",
+      "nombre": "Dolor en el brazo",
+      "sintomas_clave": ["SINT-14"],
+      "nivel_riesgo": "Bajo",
+      "recomendaciones": "Reposo del brazo afectado, evitar levantar objetos pesados, aplicar compresas tibias o frías según la tolerancia e intentar mantener la articulación en posición neutra.",
+      "banderas_rojas":"Síntomas/Red Flags: Dolor en el brazo izquierdo u hombro de inicio súbito acompañado de opresión en el pecho, falta de aire, sudoración fría o náuseas (Alerta de Infarto Agudo de Miocardio). Pérdida brusca de fuerza, adormecimiento persistente o incapacidad para mover los dedos.
+Factores por Edad: En adultos mayores de 45 años con factores de riesgo cardiovascular (hipertensión, tabaquismo, diabetes), el dolor irrestricto de brazo requiere descarte cardiaco prioritario.",
+      "canalizacion": "Traumatología / Urgencias (Si hay banderas rojas por esospecha cardiaca)"
+    },
+    {
+      "id": "ENF-15",
+      "nombre": "Presión en el pecho",
+      "sintomas_clave": ["SINT-15"],
+      "nivel_riesgo": "Bajo",
+      "recomendaciones": "Reposo físico absoluto e inmediato. Colocar al paciente en posición semi-sentada y aflojar prendas ajustadas en cuello y tórax. Mantener la calma mientras se solicita asistencia médica.",
+      "banderas_rojas":"Síntomas/Red Flags: Sensación de peso o pata de elefante en el centro del pecho que se irradia a mandíbula, cuello, espalda o brazo izquierdo, acompañado de disnea, mareo, diaforesis (sudor frío) o síncope (desmayo). Es una emergencia médica absoluta.
+Factores por Edad: En personas mayores de 40 años o pacientes con antecedentes metabólicos/cardiacos, este síntoma debe tratarse como síndrome coronario agudo hasta demostrar lo contrario.",
+      "canalizacion": "Urgencias Hospitalarias 911 (Si hay banderas rojas por sospecha cardiaca)"
+    },
+    {
+      "id": "ENF-16",
+      "nombre": "Picadura de insecto o arácnido",
+      "sintomas_clave": ["SINT-16"],
+      "nivel_riesgo": "Bajo",
+      "recomendaciones": "Lavar la zona afectada con agua y jabón neutro. Aplicar hielo envuelto en un paño para reducir la inflamación local. Mantener la extremidad picada en reposo. No realizar torniquetes, cortes ni succión del veneno.",
+      "banderas_rojas":"Síntomas/Red Flags: Dificultad para respirar, hinchazón de labios, lengua o garganta (angioedema), mareo severo, urticaria generalizada (reacción anafiláctica). En caso de alacrán o araña violín/viuda negra: adormecimiento general, salivación excesiva, dolor abdominal o necrosis cutánea local.
+Factores por Edad: Lactantes, niños pequeños y adultos mayores expuestos a picaduras de alacrán o arañas ponzoñosas requieren atención médica de urgencia para evaluación de faboterapéutico/antiveneno.",
+      "canalizacion": "Urgencias médicas (Si hay banderas rojas por el tipo de insecto / arácnido)"
+    },
+    {
+      "id": "ENF-17",
+      "nombre": "Visión borrosa",
+      "sintomas_clave": ["SINT-17"],
+      "nivel_riesgo": "Bajo",
+      "recomendaciones": "Reposo ocular, evitar el uso de pantallas digitales o conducción de vehículos, asegurar una iluminación adecuada en el entorno y no aplicar gotas oftálmicas medicadas sin prescripción.",
+      "banderas_rojas":"Síntomas/Red Flags: Pérdida o visión borrosa de inicio repentino/súbito (en minutos u horas), dolor ocular asociado, visión de destellos de luz (fotopsias) o una especie de cortina negra sobre el campo visual, cefalea intensa o debilidad facial/corporal.
+Factores por Edad: En pacientes diabéticos, la visión borrosa requiere descarte de retinopatía diabética o edema macular. En adultos mayores, descartar accidente cerebrovascular (ACV) o glaucoma agudo.",
+      "canalizacion": "Oftalmología / Neurología"
+    },
+    {
+      "id": "ENF-18",
+      "nombre": "Mancha en el ojo",
+      "sintomas_clave": ["SINT-18"],
+      "nivel_riesgo": "Bajo",
+      "recomendaciones": "Evitar fijar la mirada en fondos muy brillantes o blancos para reducir el estrés visual. Mantener revisiones oftálmicas periódicas.",
+      "banderas_rojas":"Síntomas/Red Flags: Aparición repentina de múltiples manchas o lluvia de puntos negros, acompañada de destellos luminosos en la periferia de la visión o una sombra fija que cubre parte del campo visual (sospecha de desprendimiento de retina).
+Factores por Edad: Mayor riesgo en personas mayores de 50 años, pacientes con miopía magna o con antecedentes de cirugía de cataratas o traumatismo ocular.",
+      "canalizacion": "Oftalmología"
+    },
+    {
+      "id": "ENF-19",
+      "nombre": "Ronchas o sarpullido",
+      "sintomas_clave": ["SINT-19"],
+      "nivel_riesgo": "Bajo",
+      "recomendaciones": "Baños con agua templada sin frotar la piel, uso de jabones suaves o coloidales (avena), vestir ropa holgada de algodón y evitar rascarse para prevenir infecciones secundarias por bacterias.",
+      "banderas_rojas":"Síntomas/Red Flags: Ronchas o sarpullido acompañado de dificultad para respirar, opresión en la garganta, inflamación de cara/lengua, fiebre elevada, descamación masiva de la piel o ampollas en mucosas (boca, ojos, genitales - sospecha de síndrome de Stevens-Johnson).
+Factores por Edad: En niños pequeños, evaluar asociación con enfermedades exantemáticas de la infancia (sarampión, varicela, escarlatina). En adultos, descarto de reacciones severas a medicamentos.",
+      "canalizacion": "Dermatología / Urgencias (Si hay banderas rojas)"
+    },
+    {
+      "id": "ENF-20",
+      "nombre": "Dolor de rodilla",
+      "sintomas_clave": ["SINT-20"],
+      "nivel_riesgo": "Bajo",
+      "recomendaciones": "Aplicar compresas frías en la rodilla afectada por 15 minutos dos o tres veces al día, mantener reposo de la articulación, usar una rodillera de soporte suave si se requiere caminar y evitar cuclillas o impacto.",
+      "banderas_rojas":"Síntomas/Red Flags: Incapacidad total para soportar el peso corporal sobre la pierna, deformidad articular visible, inflamación severa de inicio rápido, rodilla caliente y roja acompañada de fiebre (sospecha de artritis séptica), o sensación de bloqueo o inestabilidad ("se traba" la rodilla).
+Factores por Edad: En adultos mayores, descartar gonartrosis (osteoartritis). En adolescentes activos o deportistas, descartar lesiones meniscales, ligamentosas o epifisiolisis.",
+      "canalizacion": "Traumatología / Ortopedia / Reumatología"
+    },
+    {
+      "id": "ENF-21",
+      "nombre": "Ojo amarillo",
+      "sintomas_clave": ["SINT-21"],
+      "nivel_riesgo": "Bajo",
+      "recomendaciones": "Mantener reposo, evitar estrictamente el consumo de alcohol, alimentos ricos en grasas saturadas y suspender medicamentos hepatotóxicos de venta libre (como dosis elevadas de paracetamol) hasta contar con evaluación médica.",
+      "banderas_rojas":"Coloración amarilla extendida a la piel, orina de color oscuro (coluria / color té), heces pálidas o blanquecinas (acolia), dolor severo en el cuadrante superior derecho del abdomen, fiebre con escalofríos o confusión/somnolencia (encefalopatía).
+Factores por Edad: En recién nacidos durante los primeros días de vida, la ictericia progresiva requiere valoración pediátrica urgente para descartar kernícterus. En adultos mayores, descartar obstrucción biliar por coledocolitiasis o proceso neoplásico.",
+      "canalizacion": "Hepatología / Medicina Interna"
+    },
+    {
+      "id": "ENF-22",
+      "nombre": "Incontinencia",
+      "sintomas_clave": ["SINT-22"],
+      "nivel_riesgo": "Bajo",
+      "recomendaciones": "Realizar ejercicios de fortalecimiento del suelo pélvico (ejercicios de Kegel), reducir la ingesta de irritantes vesicales (café, alcohol, bebidas carbonatadas, picante), mantener un peso saludable y establecer horarios regulares para orinar.",
+      "banderas_rojas":"Síntomas/Red Flags: Incontinencia de inicio repentino, presencia de sangre visible en la orina (hematuria), dolor o ardor intenso al orinar (disuria), fiebre, debilidad o pérdida de sensibilidad en piernas o zona genital (anestesia en silla de montar).
+Factores por Edad: En adultos mayores, la incontinencia aguda puede ser la única manifestación de una infección de vías urinarias grave o deliro estresante. En hombres mayores de 50 años, descartar hiperplasia prostática benigna.",
+      "canalizacion": "Urología / Ginecología"
+    },
+    {
+      "id": "ENF-23",
+      "nombre": "Pérdida de cabello",
+      "sintomas_clave": ["SINT-23"],
+      "nivel_riesgo": "Bajo",
+      "recomendaciones": "Utilizar champús suaves sin sulfatos, evitar peinados con tracción excesiva (colas apretadas, trenzas), reducir el uso de calor directo (secadoras, planchas) y mantener una dieta equilibrada rica en hierro, zinc y proteínas.",
+      "banderas_rojas":"Síntomas/Red Flags: Pérdida de cabello enparches circulares bien definidos (alopecia areata), descamación, enrojecimiento o pus en el cuero cabelludo con dolor (tinea capitis), caída repentina masiva posterior a enfermedad o parto, o acompañada de fatiga extrema, intolerancia al frío o cambios de peso (sospecha tiroidea).",
+      "canalizacion": "Dermatología"
+    },
+    {
+      "id": "ENF-24",
+      "nombre": "Disfunción eréctil",
+      "sintomas_clave": ["SINT-24"],
+      "nivel_riesgo": "Bajo",
+      "recomendaciones": "Adopción de hábitos saludables (ejercicio aeróbico regular, cesación del tabaquismo, moderación del alcohol), manejo del estrés y mantenimiento de patrones de sueño adecuados. NO consumir fármacos o suplementos potenciadores sin prescripción médica.",
+      "banderas_rojas":"Síntomas/Red Flags: Disfunción de inicio súbito, deformidad o dolor en el pene durante la erección (enfermedad de Peyronie), pérdida de caracteres sexuales secundarios (vello, ginecomastia) o asociada a dolor pélvico o dificultad para orinar.
+Factores por Edad: En hombres mayores de 40 años, la disfunción eréctil progresiva suele ser un marcador temprano de enfermedad cardiovascular subyacente (aterosclerosis) y requiere evaluación de riesgo coronario.",
       "canalizacion": "Urología / Sexología"
+    },
+    {
+      "id": "ENF-25",
+      "nombre": "Dientes amarillos",
+      "sintomas_clave": ["SINT-25"],
+      "nivel_riesgo": "Bajo",
+      "recomendaciones": "Higiene bucal rigurosa mediante cepillado 3 veces al día con pasta fluorada, uso diario de hilo dental, disminución del consumo de café, té, vino tinto, refrescos oscuros y tabaco. Evitar el uso desmedido de remedios caseros abrasivos (como bicarbonato o limón) que desgastan el esmalte.",
+      "banderas_rojas":"Síntomas/Red Flags: Cambio de coloración a tono grisáceo o negro en un solo diente (indicio de necrosis pulpar / diente muerto), dolor al masticar, encías sangrantes o retraídas, o movilidad dental.
+Factores por Edad: En niños, la tinción amarillenta/marrón generalizada puede responder a fluorosis o uso de medicamentos (tetraciclinas) durante la formación del esmalte.",
+      "canalizacion": "Odontología"
+    },
+    {
+      "id": "ENF-26",
+      "nombre": "Palidez",
+      "sintomas_clave": ["SINT-26"],
+      "nivel_riesgo": "Bajo",
+      "recomendaciones": "Mantener una hidratación adecuada, evitar cambios bruscos de postura para prevenir mareos y asegurar el consumo de alimentos ricos en hierro y vitaminas (carnes magras, legumbres, vegetales de hoja verde).",
+      "banderas_rojas":"Síntomas/Red Flags: Palidez de inicio rápido acompañada de fatiga extrema, falta de aire con mínimos esfuerzos, palpitaciones, mareo/síncope, sangrado anormal (orina, heces negras/con sangre, gingivorragia) o aparición de hematomas no explicados.
+Factores por Edad: En niños pequeños, la palidez con apatía requiere descarte prioritario de anemia ferropénica severa o hemopatías. En adultos mayores, descartar sangrado digestivo microscópico crónico o neoplasias colonicas.",
+      "canalizacion": "Médico General / Hematología"
+    },
+    {
+      "id": "ENF-27",
+      "nombre": "Diarrea",
+      "sintomas_clave": ["SINT-27"],
+      "nivel_riesgo": "Bajo",
+      "recomendaciones": "Iniciar hidratación inmediata con Vida Suero Oral o soluciones de rehidratación electrolítica (evitar bebidas deportivas azucaradas). Llevar dieta blanda fraccionada (arroz, plátano, tostadas, manzana) y suspender lácteos, grasas, irritantes y café.",
+      "banderas_rojas":"Síntomas/Red Flags: Presencia de sangre visible o moco en las heces (disentería), fiebre elevada superior a 38.5 °C, dolor abdominal severo continuo, signos de deshidratación (boca seca, ausencia de orina por > 8 horas, ojos undidos) o duración superior a 2 días sin mejora.
+Factores por Edad: Lactantes, niños menores de 5 años y adultos mayores de 65 años con diarrea profusa sufren deshidratación grave en cuestión de horas, requiriendo atención urgente.",
+      "canalizacion": "Médico General / Gastroenterología"
+    },
+    {
+      "id": "ENF-28",
+      "nombre": "Quemadura",
+      "sintomas_clave": ["SINT-28"],
+      "nivel_riesgo": "Bajo",
+      "recomendaciones": "Enfriar la zona afectada inmediatamente bajo un chorro suave de agua a temperatura ambiente (NO helada ni con hielo) durante 10 a 15 minutos. Cubrir sin apretar con una gasa estéril o paño limpio seco. No aplicar remedios caseros (pasta dental, mantequilla, aceites), no romper ampollas y no retirar ropa adherida.",
+      "banderas_rojas":"Síntomas/Red Flags: Quemaduras de segundo grado con ampollas grandes o de tercer grado (piel blanquecina, acartonada o insensible), quemaduras que afectan cara, cuello, manos, pies, genitales o articulaciones mayores, quemaduras químicas o eléctricas, o inhalación de humo (disnea, hollín en nariz/boca).
+Factores por Edad: Cualquier quemadura de segundo o tercer grado en niños menores de 5 años o adultos mayores exigen evaluación médica obligatoria.",
+      "canalizacion": "Urgencias (Si hay banderas rojas por sospecha cardiaca)"
+    },
+    {
+      "id": "ENF-29",
+      "nombre": "Ansiedad / Estrés elevado",
+      "sintomas_clave": ["SINT-29"],
+      "nivel_riesgo": "Bajo",
+      "recomendaciones": "Practicar técnicas de respiración guiada o diafragmática (técnica 4-4-6: inhalar en 4 seg, sostener 4 seg, exhalar en 6 seg). Buscar un espacio tranquilo y ventilado, reducir estímulos sensoriales (luces, ruidos) y evitar el consumo de cafeína, alcohol o nicotina.",
+      "banderas_rojas":"Síntomas/Red Flags: Dolor opresivo en el pecho, sensación intensa de asfixia, adormecimiento generalizado de extremidades, desorientación espacial, pensamientos autolíticos (ideas de hacerse daño o suicidio) o crisis recurrentes incapacitantes.
+Factores por Edad: En adultos jóvenes, descartar patología tiroidea o consumo de sustancias. En adultos mayores con primer episodio de ansiedad, descarto de evento coronario o demencia incipiente.",
+      "canalizacion": "Psicología / Psiquiatría / Psicoterapeuta / Urgencias (Si hay banderas rojas de ideaación suicida o confusión)"
+    },
+    {
+      "id": "ENF-30",
+      "nombre": "Dolor de espalda",
+      "sintomas_clave": ["SINT-30"],
+      "nivel_riesgo": "Bajo",
+      "recomendaciones": "Mantener reposo relativo evitando el encamamiento prolongado (el movimiento suave favorece la recuperación). Aplicar compresas frías en las primeras 48 horas tras el inicio del dolor y posteriormente compresas tibias. Mantener una adecuada higiene postural, evitar levantar objetos pesados y utilizar un colchón firme.",
+      "banderas_rojas":"Síntomas/Red Flags: Dolor irradiado hacia una o ambas piernas por debajo de la rodilla con adormecimiento o pérdida de fuerza (sospecha de radiculopatía / hernia discal), pérdida del control de esfínteres (incontinencia urinaria o fecal) o adormecimiento en la zona genital/perineal (Alerta Crítica: Síndrome de Cauda Equina), dolor nocturno constante que empeora al acostarse, o acompañado de fiebre, pérdida de peso no explicada o antecedente de traumatismo de alto impacto.
+Factores por Edad: En adultos mayores de 50 años o pacientes con osteoporosis/uso crónico de corticoides, un dolor lumbar de inicio súbito exige descarto de fractura por aplastamiento vertebral. En jóvenes, descartar espondiloartritis.",
+      "canalizacion": "Traumatología / Reumatología"
+    },
+    {
+      "id": "ENF-31",
+      "nombre": "Cuadro Irritativo Respiratorio",
+      "sintomas_clave": ["SINT-10","SINT-03","SINT-01"],
+      "nivel_riesgo": "Bajo",
+      "recomendaciones": "Lavados nasales con solución salina estéril, abundante hidratación con líquidos a temperatura ambiente, reposo vocal y humidificación de ambientes.",
+      "banderas_rojas":"Síntomas / Red Flags: Aparición de fiebre superior a 38.5 °C por más de 3 días, dificultad para respirar o incapacidad para deglutir saliva.
+Factores por Edad: En menores de 2 años y adultos mayores de 65 años, vigilar la frecuencia respiratoria para descarto de complicación bronquial.",
+      "canalizacion": "Médico General"
+    },
+    {
+      "id": "ENF-32",
+      "nombre": "Cuadro Gastrointestinal infeccioso",
+      "sintomas_clave": ["SINT-27","SINT-02","SINT-26"],
+      "nivel_riesgo": "Bajo",
+      "recomendaciones": "Iniciar rehidratación oral inmediata mediante Vida Suero Oral, mantener dieta blanda astringente (arroz, plátano, tostadas) y suspender consumo de lácteos, grasas y azúcares refinados.",
+      "banderas_rojas":"Síntomas / Red Flags: Presencia de sangre o moco en las heces, vómito incontrolable que impida la vía oral, signos de deshidratación grave (ausencia de orina por más de 8 horas, boca seca, confusión).
+Factores por Edad: Lactantes, niños menores de 5 años y adultos mayores representan población de alta vulnerabilidad a la deshidratación rápida.",
+      "canalizacion": "Médico General / Gastroenterología"
+    }
+    {
+      "id": "ENF-33",
+      "nombre": "Cuadro de estrés tensional",
+      "sintomas_clave": ["SINT-08","SINT-29","SINT-14"],
+      "nivel_riesgo": "Bajo",
+      "recomendaciones": "Reposo en ambiente silencioso y con poca luz, aplicación de compresas tibias en cuello/hombros, técnicas de respiración diafragmática (4-4-6) y pausas activas.",
+      "banderas_rojas":"Síntomas / Red Flags: Cefalea de inicio súbito e intensidad máxima (en estallido), rigidez de nuca, alteración del habla o visión, pérdida de fuerza en un lado del cuerpo.
+Factores por Edad: En pacientes mayores de 50 años con cefalea de nuevo inicio, descartar procesos vasculares u ocupativos.",
+      "canalizacion": "Médico General / Psicología"
+    },
+    {
+      "id": "ENF-34",
+      "nombre": "Cuadro Inflamatorio Otorrinolaringológico",
+      "sintomas_clave": ["SINT-06","SINT-07","SINT-02"],
+      "nivel_riesgo": "Bajo",
+      "recomendaciones": "Colocar compresas tibias externas sobre la zona del oído, mantener el oído seco (evitar la entrada de agua durante el baño) y no introducir hisopos u objetos.",
+      "banderas_rojas":"Síntomas / Red Flags: Salida de fluido purulento o sangre por el conducto auditivo, inflamación y enrojecimiento detrás de la oreja, parálisis facial o mareo/vértigo severo.
+Factores por Edad: En lactantes y niños pequeños con llanto inconsolable y manipulación de la oreja, requiere descarte de otitis media supurada.",
+      "canalizacion": "Médico General / Otorrinolaringología"
+    },
+    {
+      "id": "ENF-35",
+      "nombre": "Cuadro de afección Odontológica",
+      "sintomas_clave": ["SINT-09","SINT-25","SINT-02"],
+      "nivel_riesgo": "Bajo",
+      "recomendaciones": "Realizar enjuagues suaves con agua tibia y sal, mantener higiene oral cuidadosa sin lastimar la zona y evitar alimentos extremadamente fríos, calientes o azucarados.",
+      "banderas_rojas":"Sintomas / Red Flags: Hinchazón o aumento de volumen visible en cara, mejilla o cuello, dificultad para abrir la boca (trismus) o para deglutir saliva, y fiebre alta.
+Factores por Edad: En adultos mayores o pacientes con diabetes, las infecciones dentales pueden propagarse a espacios profundos del cuello con rapidez.",
+      "canalizacion": "Odontología"
+    },
+    {
+      "id": "ENF-36",
+      "nombre": "Cuadro ocular inflamatorio",
+      "sintomas_clave": ["SINT-11","SINT-17","SINT-10"],
+      "nivel_riesgo": "Bajo",
+      "recomendaciones": "Reposo visual estricto (suspender uso de pantallas), evitar frotarse los ojos, suspender el uso de lentes de contacto y usar gafas de sol ante la luz.",
+      "banderas_rojas":"Síntomas / Red Flags: Pérdida súbita de la visión, dolor ocular intenso acompañado de náuseas/vómito, percepción de halos de colores alrededor de las luces o trauma previo.
+Factores por Edad: En adultos mayores o pacientes con hipertensión/diabetes, descartar glaucoma de ángulo cerrado o compromiso vascular retiniano.",
+      "canalizacion": "Oftalmología"
+    },
+    {
+      "id": "ENF-37",
+      "nombre": "Cuadro Sistémico Hepatobiliiar",
+      "sintomas_clave": ["SINT-21","SINT-26","SINT-29"],
+      "nivel_riesgo": "Alto",
+      "recomendaciones": "Reposo físico, suspensión absoluta de alcohol y de medicamentos no recetados, e hidratación continua con agua natural.",
+      "banderas_rojas":"Síntomas / Red Flags: Orina de color café/té oscuro, heces blancas o pálidas, dolor intenso en el abdomen derecho, sangrados anormales o somnolencia/confusión.
+Factores por Edad: En recién nacidos, la coloración amarilla en ojos/piel en los primeros días es una alerta pediátrica. En adultos mayores, evaluar patología biliar u oncógena.",
+      "canalizacion": "Gastroenterología/ Hepatología"
+    },
+    {
+      "id": "ENF-38",
+      "nombre": "Cuadro Respiratorio Bajo Severo",
+      "sintomas_clave": ["SINT-04","SINT-02","SINT-05"],
+      "nivel_riesgo": "Alto",
+      "recomendaciones": "Reposo absoluto en posición semi-sentada (45°), ventilación del espacio y evitar esfuerzos físicos de cualquier tipo.",
+      "banderas_rojas":"Síntomas / Red Flags: Coloración azulada en labios o uñas (cianosis), confusión mental, incapacidad para hilar frases cortas, aleteo nasal o dolor torácico al respirar.
+Factores por Edad: En adultos mayores de 65 años y lactantes, representa un cuadro de alto riesgo de insuficiencia respiratoria que requiere urgencias.",
+      "canalizacion": "Urgencias (Si hay banderas rojas)"
+    },
+    {
+      "id": "ENF-39",
+      "nombre": "Cuadro Agudo Respiratorio",
+      "sintomas_clave": ["SINT-15","SINT-04","SINT-14"],
+      "nivel_riesgo": "Alto",
+      "recomendaciones": "Suspender de inmediato toda actividad física. Sentar al paciente en posición cómoda semi-incorporada, aflojar ropa ajustada y llamar de inmediato al 911 o acudir al hospital más cercano.",
+      "banderas_rojas":"Síntomas / Red Flags: Pain opresivo en el centro del pecho que se irradia a mandíbula, cuello o brazo izquierdo, acompañado de sudoración fría, náuseas o mareo/desmayo.
+Factores por Edad: En personas mayores de 40 años o con antecedentes de hipertensión, diabetes, tabaquismo o colesterol elevado, constituye sospecha de evento coronario agudo",
+      "canalizacion": "Urgencias"
     }
   ]
 }
