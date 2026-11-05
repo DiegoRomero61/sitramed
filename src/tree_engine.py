@@ -1,16 +1,16 @@
 import json
 import os
-from src.models import Enfermedad
+from src.models import CuadroClinico
 
 class TreeEngine:
     def __init__(self, json_path="data/base_conocimiento.json"):
         self.json_path = json_path
         self.sintomas_secundarios = {}
-        self.enfermedades = {}
+        self.cuadros_clinicos = {}
 
     def cargar_conocimiento(self):
         if not os.path.exists(self.json_path):
-            raise FileNotFoundError(f"No se encontró el archivo de base de conocimiento en: {self.json_path}")
+            raise FileNotFoundError(f"No se encontró la base de conocimiento en: {self.json_path}")
 
         with open(self.json_path, "r", encoding="utf-8") as f:
             data = json.load(f)
@@ -19,12 +19,16 @@ class TreeEngine:
             self.sintomas_secundarios[s["id"]] = s
 
         for e in data.get("enfermedades", []):
-            self.enfermedades[e["id"]] = Enfermedad(
-                id_enfermedad=e["id"],
+            # Carga directa y obligatoria del texto de banderas rojas del JSON
+            texto_flags = e.get("banderas_rojas", "").strip()
+            if not texto_flags:
+                texto_flags = "Consulte a un profesional médico si los síntomas empeoran o persisten."
+
+            self.cuadros_clinicos[e["id"]] = CuadroClinico(
+                id_cuadro=e["id"],
                 nombre=e["nombre"],
                 sintomas_clave=e["sintomas_clave"],
-                nivel_riesgo=e["nivel_riesgo"],
                 recomendaciones=e["recomendaciones"],
                 canalizacion=e["canalizacion"],
-                banderas_rojas=e.get("banderas_rojas", "Consulte a un médico si los síntomas empeoran o persisten.")
+                banderas_rojas=texto_flags
             )
